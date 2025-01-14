@@ -2,14 +2,14 @@
         const header = document.getElementById('header');
         const button = document.getElementById('click-button');
        
-//1 Let clickcount 
+//1 Let clickcount updates the clicks for the system
         let clickCount = localStorage.getItem('clickCount') ? parseInt(localStorage.getItem('clickCount')) : 0;
 
         // Update display on load
         clickCountDisplay.textContent = clickCount;
         updateUI();
 
-//2.Explain what this event listener function does (and what function it calls).
+//2.The EventListener interface is the primary method for handling events
         // Add event listener to button
         button.addEventListener('click', () => {
             clickCount++;
